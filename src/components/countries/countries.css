@@ -1,0 +1,21 @@
+.country-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+   
+}
+
+.visited {
+    background-color: chocolate;
+}
+
+
+.going {
+    background-color:grey;
+}
+
+.flag-container img  {
+     width:10%;
+     border-radius: 10px;
+     margin-right: 5px;
+}
