@@ -5,4 +5,9 @@
     border-radius: 20px;
     box-shadow: 3px 2px ;
 }
+.btn{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 10px;
+}
 

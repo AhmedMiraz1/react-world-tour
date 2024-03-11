@@ -12,15 +12,17 @@ const Country = ({ country, handelVisitedCountry, handelVisitedFlags }) => {
   return (
     <div style={{textAlign: 'center'}} className={`country ${visited ? 'visited' : 'going'}`}>
       <h4>{name?.common}</h4>
-      <img src={flags.png} alt="" />
+      <img style={{width:'100%', height:'30%', borderRadius:'10px'}} src={flags.png} alt="" />
       <p>Area : {area}</p>
       <p>Capital : {capital}</p>
       <p>population : {population}</p>
       <p><small>Code : {cca3}</small></p>
       <button onClick={() =>handelVisitedCountry(country)}>Mark As Visited</button>
       <br/>
-      <button onClick={() => handelVisitedFlags(country.flags.png)}>Add Flags</button>
+      <div className="btn">
+        <button onClick={() => handelVisitedFlags(country.flags.png)}>Add Flags</button>
       <button style={{marginRight: "10px", marginTop:"10px"}} onClick={handelVisited}>{ visited? "visited" : "Going "}</button>
+      </div>
       {visited ? "I have Visited" : "I go to visit"}
      
     </div>

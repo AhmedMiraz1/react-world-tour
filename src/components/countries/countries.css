@@ -6,7 +6,7 @@
 }
 
 .visited {
-    background-color: chocolate;
+    background-color:rgb(84, 57, 34);
 }
 
 
@@ -16,6 +16,7 @@
 
 .flag-container img  {
      width:10%;
+     height: 10%;
      border-radius: 10px;
      margin-right: 5px;
 }
